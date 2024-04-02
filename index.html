@@ -1,241 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"content="IE=edge">
-    <meta name= "viewport" content="width=device-width, initial-scale.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Itz4u2 | Intake</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Water+Brush&display=swap" rel="stylesheet">
-
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itz4u: Human Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Water+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet"href="style.css"type="text/css">
 </head>
+
 <body>
-    <!--this is the current intake form 03/21/2024-->
-    <header class="homeContact">Itz<span class="red">4</span>u</header>
+
+<!--<div class="preLoadcontainer">
+        <div class="preLoadcontainer1"><q>Mom is so happy when she get's a phone call</q>
+        </div>
+
+        <div class="preLoadcontainer2">HAPPINESS<br>of your elderly parent<br><span class="red">IS</span><br> worth a few cents a day.
+        </div>
+                
+        <div class="preLoadcontainer3">Itz<span class="red">4</span>u
+        </div>
+        <div class="photoSplash1"><img src="images/smoke_sgnl.jpg" width="200px"> </div>
+        <div class="photoSplash2"><img src="images/kid_string_can.jpg" width="200px">  </div>
+        <div class="photoSplash3"><img src="images/psg_a_note.jpg" width="200px" >  </div>
+        <div class="photoSplash4"><img src="images/two_talking.jpg" width="200px">  </div>
     
-    <!--<div class="contact-container">-->
-    <section class="intake-container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="intake-container"><!--class="contact-left">-->
-            <section class="intake-left">
-                <!--<div class="contact-left-title">-->
-                <section class="intake-left-title">
-                    <h2>Your Information</h2>
-                    <hr>
-                </section>
-                
-                <input type="hidden" name="access_key" value="d6e117aa-2dc9-40ef-9eb8-970bbde49632">
-                <div class="your-info-1">
-                    <input type="text" name="name" placeholder="Your Name" class="intake-contact-inputs" required>
-                    <input type="email" name="email" placeholder="Your Email" class="intake-contact-inputs" required>
-                    <input type="tel" name="cell phone" placeholder="Your Cell Number" class="intake-contact-inputs" optional>
-                    <input type="tel" name="home phone" placeholder="Your Home Phone" class="intake-contact-inputs" optional>
-                    <input type="tel" name="work phone" placeholder="Your Work Phone" class="intake-contact-inputs" optional>
-                </div>
-                <div class="your-info-2">
-                    <input type="text" name="spouse" placeholder="Your Spouse" class="intake-contact-inputs" optional>
-                    <input type="tel" name="spouse cell phone" placeholder="Spouse Cell Phone" class="intake-contact-inputs" optional>
-                    <input type="tel" name="spouse work phone" placeholder="Spouse Work Phone" class="intake-contact-inputs" optional>
-                </div>
-                <div class="your-info-3">
-                    <input type="text" name="street address" placeholder="Street Address" class="intake-contact-inputs" required>
-                    <input type="text" name="city" placeholder="City" class="intake-contact-inputs" required>
-                    <input type="text" name="state" placeholder="State" class="intake-contact-inputs" required>
-                    <input type="text" name="zip code" placeholder="Zip Code" class="intake-contact-inputs" required>
-                </div>
-                <div class="your-info-4">
-                    <input type="text" name="alt contact" placeholder="Alt. Contact" class="intake-contact-inputs" optional>
-                    <input type="email" name="alt contact email" placeholder="Alt. Contact Email" class="intake-contact-inputs" optional>
-                    <input type="tel" name="alt contact phone" placeholder="Alt. Contact Phone" class="intake-contact-inputs" optional>
-                </div>
-            </section> 
-        
-            <section class="intake-right">
-            
-                <section class="intake-left-title">
-                    <h2>Your Loved One's Information</h2>
-                    <hr>
-                </section>
-                <div class="your-info-1">
-                    <input type="text" name="target name" placeholder="Loved One's Name" class="intake-contact-inputs" required>
-                    <div class="radio-btn">
-                        <input type="radio" name="targetsex" name="gender" value="male" class="radio-btn"/><label for="gender">Male</label>
-                        <input type="radio" name="targetsex" name="gender" value="female" class="radio-btn"/><label for="gender">Female</label>
-                    </div>
-                </div>
-                <div class="your-info-1">
-                    <div class="radio-btn">
-                        
-                        <input type="radio" name="targetmarried" name="married" value="married" class="radio-btn"/><label for="married">Married</label>
-                        <input type="radio" name="targetmarried" name="single" value="single" class="radio-btn"/><label for="single">Single</label>
-                        <input type="radio" name="targetmarried" name="widowed" value="widowed" class="radio-btn"/><label for="widowed">Widowed</label>
-                        
-                    </div>
-                </div>
-                <div class="your-info-1">
-                    <input type="tel" name="target cell phone" placeholder="Cell Number" class="intake-contact-inputs" optional>
-                    <input type="tel" name="target home phone" placeholder="Home Phone" class="intake-contact-inputs" optional>
-                    <input type="tel" name="target work phone" placeholder="Work Phone" class="intake-contact-inputs" optional>
-                </div>
-                <div class="your-info-1">
-                    <input type="text" name="target spouse" placeholder="Spouse" class="intake-contact-inputs" optional>
-                    <div class="radio-btn">
-                        <input type="radio" name="spousesex" name="gender" value="male" class="radio-btn"/><label for="gender">Male</label>
-                        <input type="radio" name="spousesex" name="gender" value="female" class="radio-btn"/><label for="gender">Female</label>
-                        </div>
-                    <div class="radio-btn">
-                        <input type="radio" name="spouse lvg" value="living" class="radio-btn"/><label for="living">Living</label>
-                        <input type="radio" name="spouse lvg" value="living" class="radio-btn"/><label for="living">Deceised</label>
-                    </div>
-                </div>
-                <div class="your-info-2">
-                        <input type="tel" name="target spouse cell phone" placeholder="Spouse Cell Phone" class="intake-contact-inputs" optional>
-                        <input type="tel" name="target spouse work phone" placeholder="Spouse Work Phone" class="intake-contact-inputs" optional>
-                </div>
-                <div class="your-info-3">
-                    <input type="text" name="target street address" placeholder="Street Address" class="intake-contact-inputs" optional>
-                    <input type="text" name="target city" placeholder="City" class="intake-contact-inputs" optional>
-                    <input type="text" name="target state" placeholder="State" class="intake-contact-inputs" optional>
-                    <input type="text" name="zipcode" placeholder="Zip Code" class="intake-contact-inputs" optional>
-                </div>
-                
-        </section>
+    </div>-->
 
-        <table class="tbl-int">
-            <thead>
-                <figcaption>Your Loved One's</figcaption>
-                <figcaption>Interest's</figcaption>
-                
-            </thead>
-            <tbody>
-            <tr>
-                <td class="input-two">&nbsp;<input type="checkbox" id="travel" name="interest" value="travel"> Travel</td>
-                <td class="input-two">&nbsp;<input type="checkbox" id="cards" name="interest" value="cards"/><label>  Cards</label></td>
-            </tr>
-            <tr>
-                <td>&nbsp;<input type="checkbox" id="puzzles" name="interest" value="puzzles"/><label>    Puzzles</label></td>
-                <td>&nbsp;<input type="checkbox" id="triva" name="interest" value="trvia"/><label>  Triva</label></td>
-            </tr>
-                <td>&nbsp;<input type="checkbox" id="movies" name="interest" value="movies"/><label>  Movies</label></td>
-                <td>&nbsp;<input type="checkbox" id="music" name="interest" value="music" /><label>  Music</label></td>
-            <tr>
-                <td>&nbsp;<input type="checkbox" id="dining" name="interest" value="dining" /><label>  Dining</label></td>
-                <td>&nbsp;<input type="checkbox" id="politics" name="interest" value="politics"/><label>  Politics</label></td>
-            </tr>
-            <tr>     
-                <td>&nbsp;<input type="checkbox" id="fitness" name="interest" value="fitness" /><label>  Fitness</label></td>
-                <td>&nbsp;<input type="checkbox" id="garding" name="interest" value="garding" /><label>  Garding</label></td>
-            </tr>
-            <tr>
-                <td>&nbsp;<input type="checkbox" id="art" name="interest" value="art"/><label>  Art</label></td>
-                <td>&nbsp;<input type="checkbox" id="fashion" name="interest" value="fashion"/><label>  Fashion</label></td>
-            </tr>
-            <tr>
-                <td>&nbsp;<input type="checkbox" id="cooking" name="interest" value="cooking"/><label>  Cooking</label></td>
-                <td>&nbsp;<input type="checkbox" id="sports" name="interest" value="sports"/><label>  Sports</label></td>
-            </tr>
-            <tr>
-                <td>&nbsp;<input type="checkbox" id="bird watching" name="interest" value="bird watching"/><label>  Bird Watching</label></td>
-                <td>&nbsp;<input type="checkbox" id="pets" name="interest" value="pets" /><label>  Pets</label></td>
-            </tr>
-            <tr>        
-                <td>&nbsp;<input type="checkbox" id="olympics" name="interest" value="olympics" /><label>  Olympics</label></td>
-                <td>&nbsp;<input type="checkbox" id="boating" name="interest" value="boating"/><label>  Boating &nbsp; &nbsp;</label></td>
-            </tr>
-            <tr>
-                <td class="input-one" colspan="2"><input type="text" id="otherinterest" name="prev employment" placeholder="Prev. Employment" class="radio-btn-2" aria-label="Other interest"/></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="text" id="otherinterest" name="other" placeholder="Other Topics" class="radio-btn-2" aria-label="Other interest"/></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="text" id="otherinterest" name="topics to avoid" placeholder="Topics to Avoid" class="radio-btn-3" aria-label="Other interest"/></td>
+    <section id="one">
+      <div class="homeHead">
+          <header class="home">Itz<span class="red">4</span>u</header>
+      </div>
+      <section id="page-content">
 
-            </tr>
-        
-            </tbody>  
-        </table>
+          <div class="dClass-1">
+              <h2> A low cost safe and secure service for your home bound<br><span class="red">loved</span> one.</h2>
+          </div>
+          
+              <p>Let's face it, in todays world,
+                  it's tough to do everything necessary everyday.<br><span class="calledMom"> has anyone called mom lately?</span><br> "I thought You where going to call her"
+                  <br>
+                  The kids, work, shopping, I was going to call her later, then days go by, and your loved one is sitting there wishing someone would call.
+                  <br>
+                  We take the burdon off of you, one less thing for you to worry about.
+                  Study's show that the more comunacation we have with the elderly,
+                  <br> the better there quality of life is.
+              
+                   We can help reduce depresion 
+                  <br>with a phone call from one of our trained team members.
+                  for less then $5.00 a day.</p>
+          
+      </section>
+  </section>
 
-        <section class="intake-right">
-            
-            <section class="intake-left-title">
-                <h2>Service's Available</h2>
-                <hr>
-            </section>
-            <div class="intake-info-1">
-                <h1>Frequeance per week:</h1>
-        
-                <div class="intake-info-1">
-
-            <h1>DAILY</h1>
-                    <input type="radio" name="daily" value="daily" class="radio-btn"/>
-                    <p>$0.46/min x 10 minutes, twice a day = $9.20 per day</p>
-
-                    <h1>EVERY OTHER DAY</h1>
-                    <input type="radio" name="daily" value="every other day" class="radio-btn"/>
-                    <p>$0.77/min x 10 minutes, twice a day = 15.40</p>
-
-                    <h1>PREFERED TIME OF DAY</h1>
-                    <input type="text" id="time" name="time" placeholder="Prefered time to call." class="radio-btn-3">
-
-                    <h1>START DATE</h1>
-                    <input type="text" id="start date" name="time" placeholder="Start Date." class="radio-btn-3">
-                    
-                </div>
-                <div class="fifty-off">
-                <div class="radio-btn">
-                    <p class="50off">50% OFF FOR A LIMITED TIME</p>
-                </div>
-                </div>
-
-
-                
-            </div>
-            <div class="intake-info-1">
-            
-                    <h1>PAYMENT OPTIONS</h1>
-                    <h1>Credit Card</h1>
-                    <input type="radio" name="payment" name="c/c" value="c/c" class="radio-btn"/>
-                    <h1>Money Order</h1>
-                    <input type="radio" name="payment" name="money order" value="money order" class="radio-btn"/>
-                    <h1>Invoice</h1>
-                    <input type="radio" name="payment" name="invoice" value="invoice" class="radio-btn"/>
-                    
-        
-                <p class="intake-p-refund"> A 14 DAY, 100% REFUNDIBLE DEPOSIT IS REQUIRED </p>
-            </div>
-        </section>
-
+  <section id="two">
+      <header>
+        <h1>Service Avalible</h1>
+      </header>
+    <div class="dClass-3">
+      <ul>
+        <li>
+          We will call your loved one at desingnated intervals, we will build a relationship with bla bla bla
+        </li>
+        <br>
+        <li>
+          Security for your loved one is absolutly our highest priorty, NO contact information for 
+          you or your family member is ever shared with our staff or outside entaties.  
+          100% SAFE & SECURE.
+        </li>
+        <br> 
+        <li>
+          A highly trained team member (male or female as requested) will be assigned to your loved one.
+          The team member will call at times you request, they will ingage them regarding there hobbies, 
+          sports, daily task, tv shows or movies, med reminders, whatever they want to talk about.
+        </li>
+        <br>          
     
-                <button id="btn-intk" type="submit">Submit</button>
-                        
-  
-            
-
-                    <!--</form> -->
-
-                <!--<input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">-->
-                <input type="hidden" name="_subject" subject-line="Itz4u Intake Form"value="New submission from ITZ4u!">
-
-            
-        </form>    
-    
-        
-    </section>
-
-</body>
-
-<footer class="intake-foot">
-    <a class="copyRight" href="copyRight.html">Copyright &copy;2024 Itz<span class="red">4</span>u</a><a class="copyRight" href="index.html"> HOME</a>
+        <li>
+            Peace of mind for you and your family members, knowing someone has bla, bla, bla...
+        </li>
+        <br>
+          <li>
+            Reports of conversation topics, length and dates. emailed at intervals of daily, weekly, or monthly.
+            </li>
+            <br>
+          
+          <li>
+            Calls for Emergency, and to the prearanged contact, if ever necessary.
+          </li>
+      
     <br>
-    <a class="copyRight" href="term_of_service.html">Terms of Service /</a>
-    <a class="copyRight" href="privacy-policy.html">Privacy Policy</a>
-</footer>
+              
+                      <li>
+                          Medacation, exercise reminders.
+                        </li>
+                        <br>
+                      
+                      <li>
+                          Less isolation and deprestion, thru our tried and true procedures.
+                      </li>
+                  <br>
+                      <li>
+                        Our MONEY BACK GURANTEE is 2nd to none. -> 100% MONEY BACK 
+                        if you or your loved one is not happy.
+                      </li>
+                      
+                      
+                  </ul>
+                </div> 
+                <div class="tbl">
+                <table>
+                      <caption class="tblRates">RATES</caption>
+                  
+                  <tr>
+                                       
+                      <th>Premium Hours</th>
+                      <th>Regular Hours</th>
+                      <th>Premium Hours</th>
+                  </tr>
+                  <tr>
+                      <td>12:00am-6:00am</td>
+                      <td>6:00am-10:00pm</td>
+                      <td>10:00pm-12:00am</td>
+                  </tr>
+                  <tr>
+                      <td><strike>$2.12/minute</strike></td>
+                      <td><strike>$0.96/minute</strike></td>
+                      <td><strike>$2.12/minute</strike></td>
+                  </tr>
+              </table>     
+                </div>
+              <p class="spcPrice">50% OFF---SPECIAL PRICING AVALIBLE-INQUIRE TODAY!!!!</p>
+  </section>
+  <div class="footFade">           
+  <a href=contact_elderly1.html><button type = "button">contact us</button></a>
+  </div>
+
+  <section id="three">
+    <header>
+      <h1>Mission Statement</h1>
+    </header>
+      <h2>Our Mission, Vision, Goals &<span class="red"> Core</span> Values</h2>
+    <div class="dClass-3">
+    <p>the why, the what, and the how.
+    <br>
+      We empower home bound individuals to remain indapendent, while reducing stress on (other) family members.
+    <br>
+      Tomorrow minded with a hart and desire to make a difference in the lives of your <span>loved</span> ones.</p>
+    </div>
+      <div class="footFade">    
+      <a href=contact_elderly1.html><button type = "button">contact us</button></a>
+    </div>
 
 
+  </section>
+  <section id="four">
+  <header>
+    <h1>Our Staff</h1>
+    <nav>
+      <a href="#todd">Todd</a>
+      <a href="#squach">Sesquactch</a>
+      <a href="#bender">Bender</a>
+    </nav>
+  </header>
 
+  <main>
+    <article id="todd" class="card">
+      <figure>
+        <img src="img/todd_in_a_gray_suit.jpg" alt="Joe Coder" width="300" height="300" >
+        <figcaption class="memberfig">Todd Schuppe</figcaption>
+      </figure>
+      <p class="memberP"><span class="nowrap">C.E.O.</span></p>
+      <p>Grand PoBah</p>
+    </article>
+    <article id="squach" class="card">
+      <figure>
+        <img src="img/OIP (17).jpg" alt="squach" width="300" height="300" >
+        <figcaption>Sesquacatch</figcaption>
+      </figure>
+      <p>Collections Dept.</p>
+    </article>
+    <article id="bender" class="card">
+      <figure>
+        <img src="img/avatars-000133086631-hoig49-t500x500.jpg" alt="Jane Dev Rel" width="300" height="300" >
+        <figcaption>Bender <span class="nowrap">Planet X</span></figcaption>
+      </figure>
+      <p>Bite my Ass.</p>
+    </article>
+  </main>
+  </section>
+</div>
+</div>
+  <div class="footFade">
+                        
+    <a href=contact_elderly1.html><button type = "button">contact us</button></a>
+  </div>
 
+</main>
+  </section>
+  </div>
+  </div>
+  <div class="footFade">
+      <footer>
+        <a href="#one"><span class="footSpan">Home -</span></a>
+        <a href="#two"><span class="footSpan">Service Available</span></a><br>
+        <a href="#three"><span class="footSpan">Misson Statement -</span></a>
+        <a href="#four"><span class="footSpan">Staff</span></a>
+      
+        <div class="cRight">
+          <a class="copyRight" href="copyRight.html">Copyright &copy; Itz<span class="red">4</span>u &</a>
+          <a class="copyRight" href="term_of_service.html">Legal Stuff</a>
+        </div>
+      
+      </footer>
+    </div>
+            
+  </section>
+</body>
 
 </html>
